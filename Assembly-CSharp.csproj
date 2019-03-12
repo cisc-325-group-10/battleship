@@ -1,0 +1,934 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{72E6F840-FE4B-B545-BA95-234EA0EAEB0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_0;UNITY_2018_3;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_LINUX;PLATFORM_STANDALONE;UNITY_STANDALONE_LINUX;UNITY_STANDALONE;UNITY_STANDALONE_LINUX_API;USE_DEFAULT_PLAYERPREFS;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_SPATIALTRACKING;ENABLE_MODULAR_UNITYENGINE_ASSEMBLIES;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_LINUX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Ceto\Scripts\Common\Interpolation\InterpolatedArray.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Interpolation\InterpolatedArray2f.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Queues\DictionaryQueue.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Queues\SetQueue.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Threading\Scheduler\ICoroutine.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Threading\Scheduler\IScheduler.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Threading\Scheduler\Scheduler.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Threading\Tasks\ICancelToken.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Threading\Tasks\IThreadedTask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Threading\Tasks\TaskListener.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Threading\Tasks\ThreadedTask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\CBUtility.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\DisableFog.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\DisableGameObject.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\DisableShadows.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\ExtendedFind.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\FPSCounter.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\NotifyOnEvent.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\NotifyOnRenderObject.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\NotifyOnWillRender.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\Quit.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\RotateLight.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\RTUtility.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Common\Unity\Wireframe.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Grids\ProjectedGrid.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Grids\ProjectionData.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Buoyancy\Buoyancy.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Buoyancy\BuoyantStructure.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Buoyancy\StickToSurface.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\CameraData\CameraData.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\CameraData\ViewData.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\IgnoreOceanEvents.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\IOceanTime.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\IProjection.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Ocean.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\OceanCameraSettings.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\OceanComponent.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\OceanData.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\OceanTime.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\OceanUtility.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\OceanVR.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\AddAutoShoreMask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\AddFoamThruster.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\AddFoamTrail.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\AddShoreMask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\AddWaveOverlay.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\AddWaveOverlayBase.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\FoamOverlay.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\IOverlaySampler.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\OverlayManager.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\OverlayTexture.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\WaveOverlay.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Overlays\WaveOverlayData.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Projection3d.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Projection3f.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Querys\CoroutineWaveQueryTask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Querys\ThreadedWaveQueryTask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Querys\WaveQuery.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Ocean\Querys\WaveQueryTask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Reflections\PlanarReflection.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Reflections\ReflactionData.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Reflections\ReflectionCameraCullingDistances.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Buffers\DisplacementBufferCPU.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Buffers\DisplacementBufferGPU.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Buffers\IDisplacementBuffer.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Buffers\QueryDisplacements.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Buffers\WaveSpectrumBuffer.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Buffers\WaveSpectrumBufferCPU.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Buffers\WaveSpectrumBufferGPU.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\CustomWaveSpectrumCondition.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\ISpectrum.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\PhillipsSpectrum.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\PhillipsSpectrumCondition.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\PhillipsSpectrumConditionKey.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\UnifiedPhillipsSpectrumCondition.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\UnifiedSpectrum.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\UnifiedSpectrumCondition.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\UnifiedSpectrumConditionKey.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\WaveSpectrumCondition.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Conditions\WaveSpectrumConditionKey.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\CustomWaveSpectrumExample.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Fourier\FourierCPU.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Fourier\FourierGPU.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\ICustomWaveSpectrum.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Tasks\FindRangeTask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Tasks\FourierTask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Tasks\InitSpectrumDisplacementsTask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\Tasks\SpectrumTask.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Spectrum\WaveSpectrum.cs" />
+     <Compile Include="Assets\Ceto\Scripts\UnderWater\DepthData.cs" />
+     <Compile Include="Assets\Ceto\Scripts\UnderWater\IRefractionCommand.cs" />
+     <Compile Include="Assets\Ceto\Scripts\UnderWater\MaskData.cs" />
+     <Compile Include="Assets\Ceto\Scripts\UnderWater\RefractionCommand.cs" />
+     <Compile Include="Assets\Ceto\Scripts\UnderWater\UnderWater.cs" />
+     <Compile Include="Assets\Ceto\Scripts\UnderWater\UnderWaterPostEffect.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Utility\AddRenderTarget.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Utility\DisplayTexture.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Utility\DrawCameraFrustum.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Utility\FreeCam.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Utility\GUIDisplay.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Utility\ImageBlur.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Utility\ShipCamera.cs" />
+     <Compile Include="Assets\Ceto\Scripts\Utility\ShoreMaskGenerator.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\ASK Communication\AlexaBaseData.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\ASK Communication\AmazonAlexaManager.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\ChannelGroup\AddChannelsToChannelGroupRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\ChannelGroup\DeleteChannelGroupRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\ChannelGroup\GetAllChannelsForGroupRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\ChannelGroup\GetChannelGroupsRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\ChannelGroup\RemoveChannelsFromGroupRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\History\DeleteMessagesRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\History\FetchMessagesRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\History\HistoryRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\Presence\GetStateRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\Presence\HereNowRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\Presence\SetStateRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\Presence\WhereNowRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\PubNubNonSubBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\PubSub\LeaveRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\PubSub\PublishRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\PubSub\SubscribeRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\Push\AddChannelsToPushRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\Push\ListPushProvisionsRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\Push\RemoveAllPushChannelsForDeviceRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\Push\RemoveChannelsFromPushRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Builders\TimeRequestBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Crypto\MD5.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Crypto\PubnubCrypto.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\ChannelGroup\AddChannelsToChannelGroupBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\ChannelGroup\DeleteChannelGroupBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\ChannelGroup\GetAllChannelsForGroupBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\ChannelGroup\GetChannelGroupsBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\ChannelGroup\RemoveChannelsFromGroupBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\HIstory\DeleteMessagesBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\HIstory\FetchBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\HIstory\HistoryBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\Presence\GetStateBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\Presence\HereNowBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\Presence\SetStateBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\Presence\WhereNowBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\PubSub\FireBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\PubSub\PublishBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\PubSub\SubscribeBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\PubSub\UnsubscribeAllBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\PubSub\UnsubscribeBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\Push\AddChannelsToPushBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\Push\ListPushProvisionsBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\Push\RemoveAllPushChannelsForDeviceBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\Push\RemoveChannelsFromPushBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\EndPoints\TimeBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Entities\ChannelEntity.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Entities\ChannelIdentity.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Entities\ChannelParameters.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Entities\QueueStorage.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Enum\HTTPMethod.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Enum\PNCurrentRequestType.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Enum\PNErrorData.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Enum\PNHeartbeatNotificationOption.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Enum\PNLogVerbosity.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Enum\PNOperationType.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Enum\PNPushType.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Enum\PNReconnectionPolicy.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Enum\PNStatusCategory.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Events\CustomEventArgs.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Events\EventExtenstions.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Examples\Example.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\ExceptionHandlers\ExceptionHandlerEventArgs.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Helpers\CommonText.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Helpers\CustomException.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Helpers\Helpers.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Helpers\SafeDictionary.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Helpers\Utility.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Interface\IPubNubNoChannelsBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Interface\IPubNubNonSubscribeBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Interface\IPubNubSubcribeBuilder.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Logger\PNLoggingMethod.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Managers\PNLatencyManager.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Managers\QueueManager.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Managers\RequestQueue.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\ChannelGroup\PNChannelGroupsAddChannelResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\ChannelGroup\PNChannelGroupsAllChannelsResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\ChannelGroup\PNChannelGroupsDeleteGroupResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\ChannelGroup\PNChannelGroupsListAllResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\ChannelGroup\PNChannelGroupsRemoveChannelResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\History\PNDeleteMessagesResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\History\PNFetchMessagesResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\History\PNHistoryResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\PNResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\PNStatus.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\PNTimeResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\Presence\PNGetStateResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\Presence\PNHereNowResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\Presence\PNPresenceHeartbeatResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\Presence\PNSetStateResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\Presence\PNWhereNowResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\Publish\PNPublishResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\PubSub\PNLeaveRequestResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\PubSub\PNMessageResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\PubSub\PNPresenceEvent.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\PubSub\PNPresenceEventResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\PubSub\SubscribeEnvelope.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\PubSub\SubscribeMessage.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\PubSub\TimetokenMetadata.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\Push\PNPushAddChannelResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\Push\PNPushListProvisionsResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\Push\PNPushRemoveAllChannelsResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Consumer\Push\PNPushRemoveChannelResult.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Server\BuildRequests.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Server\RequestState.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Models\Server\Subscription.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\PubNub.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\PubNubUnity\PNConfiguration.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\PubNubUnity\PubNubUnity.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\PubNubUnity\PubNubUnityBase.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Serialization\JSONSerializer.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\ThirdParty\MiniJSON.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\WebRequest\PNUnityWebRequest.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\WebRequest\UnityWebRequestWrapper.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Workers\HeartbeatWorker.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Workers\NonSubscribeWorker.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Workers\PresenceHeartbeatWorker.cs" />
+     <Compile Include="Assets\Games SDK for Alexa\Deps\PubNub\Workers\SubscriptionWorker.cs" />
+     <Compile Include="Assets\LazyFog\Scripts\exampleSceneScript.cs" />
+     <Compile Include="Assets\Scripts\Alexa.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Util.cs" />
+     <Compile Include="Assets\Simple Warships\Demo Scene\Rotate.cs" />
+     <None Include="Assets\Ceto\Shaders\Read.compute" />
+     <None Include="Assets\Ceto\Shaders\OceanBottom.shader" />
+     <None Include="Assets\Ceto\Shaders\OceanShadowCasterBody.cginc" />
+     <None Include="Assets\Ceto\Shaders\OceanMask.shader" />
+     <None Include="Assets\Ceto\Shaders\InitJacobians.shader" />
+     <None Include="Assets\Ceto\Shaders\SlopeCopy.shader" />
+     <None Include="Assets\Ceto\Shaders\CopyDepth.shader" />
+     <None Include="Assets\Ceto\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\LazyFog\Shaders\LazyFog.shader" />
+     <None Include="Assets\Simple Warships\Demo Scene\ReadMe.txt" />
+     <None Include="Assets\Ceto\Shaders\OceanTopSide_Opaque.shader" />
+     <None Include="Assets\Ceto\Shaders\OceanDisplacement.cginc" />
+     <None Include="Assets\Ceto\Shaders\OceanBRDF.cginc" />
+     <None Include="Assets\Ceto\Shaders\OceanTopSide_Transparent.shader" />
+     <None Include="Assets\Ceto\Shaders\InitDisplacement.shader" />
+     <None Include="Assets\Games SDK for Alexa\Deps\AWSSDK\License.txt" />
+     <None Include="Assets\Games SDK for Alexa\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Ceto\Shaders\OceanUnderSide_Opaque.shader" />
+     <None Include="Assets\Ceto\Shaders\OceanShaderHeader.cginc" />
+     <None Include="Assets\Ceto\Shaders\Fourier.shader" />
+     <None Include="Assets\Ceto\Shaders\WaveOverlay.shader" />
+     <None Include="Assets\Ceto\Version.txt" />
+     <None Include="Assets\Ceto\Shaders\FoamCopy.shader" />
+     <None Include="Assets\Games SDK for Alexa\Deps\PubNub\License.txt" />
+     <None Include="Assets\Ceto\Shaders\OceanDepth.shader" />
+     <None Include="Assets\LazyFog\Instructions.txt" />
+     <None Include="Assets\Ceto\Shaders\OceanSurfaceShaderBody.cginc" />
+     <None Include="Assets\Ceto\Shaders\NormalFade.shader" />
+     <None Include="Assets\Ceto\Shaders\OceanUnderWater.cginc" />
+     <None Include="Assets\Ceto\Shaders\OceanUnderSide_Transparent.shader" />
+     <None Include="Assets\Ceto\Shaders\OceanMaskFlipped.shader" />
+     <None Include="Assets\Ceto\Shaders\InitSlope.shader" />
+     <None Include="Assets\Ceto\Shaders\UnderWaterPostEffect.shader" />
+     <None Include="Assets\Ceto\Manual.txt" />
+     <None Include="Assets\Ceto\Shaders\DisplacementCopy.shader" />
+     <None Include="Assets\Ceto\Shaders\OceanMasking.cginc" />
+     <None Include="Assets\Ceto\Shaders\OceanMaskBody.cginc" />
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>/home/justin/Unity/Battleship/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>/home/justin/Unity/Battleship/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.CollabProxy.Editor">
+ <HintPath>/home/justin/Unity/Battleship/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>/home/justin/Unity/Battleship/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.DataPrivacy">
+ <HintPath>/home/justin/Unity/Battleship/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FileSystemHttpModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTrackingModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements.Editor">
+ <HintPath>/home/justin/Unity/Battleship/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/home/justin/Unity/Battleship/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>/home/justin/Unity/Battleship/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Editor">
+ <HintPath>/home/justin/Unity/Battleship/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Tracker">
+ <HintPath>/home/justin/Unity/Battleship/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.Json">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/PubNub/ThirdParty/JsonFx.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="MarkerMetro.Unity.WinLegacy">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/PubNub/ThirdParty/MarkerMetro.Unity.WinLegacy.dll</HintPath>
+ </Reference>
+ <Reference Include="AWSSDK.CognitoIdentity">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.CognitoIdentity.dll</HintPath>
+ </Reference>
+ <Reference Include="AWSSDK.DynamoDBv2">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.DynamoDBv2.dll</HintPath>
+ </Reference>
+ <Reference Include="AWSSDK.Core">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="BouncyCastle">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/PubNub/ThirdParty/BouncyCastle.dll</HintPath>
+ </Reference>
+ <Reference Include="AWSSDK.SecurityToken">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.SecurityToken.dll</HintPath>
+ </Reference>
+ <Reference Include="netstandard">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Win32.Primitives">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.AppContext">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Concurrent">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.NonGeneric">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Specialized">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.EventBasedAsync">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Primitives">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.TypeConverter">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Console">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.Common">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Contracts">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Debug">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.FileVersionInfo">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Process">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.StackTrace">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TextWriterTraceListener">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tools">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TraceSource">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tracing">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Primitives">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Dynamic.Runtime">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Calendars">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Extensions">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.ZipFile">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.DriveInfo">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Primitives">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Watcher">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.IsolatedStorage">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.MemoryMappedFiles">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Pipes">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.UnmanagedMemoryStream">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Expressions">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Parallel">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Queryable">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NameResolution">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NetworkInformation">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Ping">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Primitives">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Requests">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Security">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Sockets">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebHeaderCollection">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets.Client">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ObjectModel">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Extensions">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Primitives">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Reader">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.ResourceManager">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Writer">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.VisualC">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Extensions">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Handles">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Numerics">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Formatters">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Json">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Primitives">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Xml">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Claims">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Algorithms">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Csp">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Encoding">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Primitives">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.X509Certificates">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Principal">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.SecureString">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding.Extensions">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.RegularExpressions">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Overlapped">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks.Parallel">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Thread">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.ThreadPool">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Timer">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ValueTuple">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.ReaderWriter">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XDocument">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath.XDocument">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlDocument">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlSerializer">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics.Vectors">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Composition">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.FileSystem">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Web">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Transactions">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Windows">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Serialization">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{5CF59BE3-5FAF-DE4D-46AC-2E093F732013}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
