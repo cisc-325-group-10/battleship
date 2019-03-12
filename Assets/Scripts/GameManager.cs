@@ -361,8 +361,8 @@ public class GameManager : MonoBehaviour
         AITargets.RemoveAt(0);
         GridSpace aiTarget = userBoard[aiCoords.row, aiCoords.col];
 
-        FireResult playerResult = ProcessMove(playerTarget, true);
-        FireResult aiResult = ProcessMove(aiTarget, false);
+        FireResult playerResult = ProcessMove(playerTarget, true, col, parsedRow);
+        FireResult aiResult = ProcessMove(aiTarget, false, null, null);
 
         if (playerResult == FireResult.WIN || aiResult == FireResult.WIN)
         {
@@ -435,12 +435,16 @@ public class GameManager : MonoBehaviour
     }
 
 
-    private FireResult ProcessMove(GridSpace target, bool playerMove)
+    private FireResult ProcessMove(GridSpace target, bool playerMove, string col, Int row)
     {
         List<Ship> enemyShipSet = playerMove ? AIShips : PlayerShips;
         if (target.ship == null)
         {
             target.hitState = HitState.MISS;
+            if (playerMove)
+            {
+                GameObject.Find("allfog/" + col + "/" + row);
+            }
             return FireResult.MISS;
         }
         // we at least hit

@@ -288,6 +288,27 @@
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
+ <Reference Include="AWSSDK.SecurityToken">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.SecurityToken.dll</HintPath>
+ </Reference>
+ <Reference Include="AWSSDK.Core">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="AWSSDK.DynamoDBv2">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.DynamoDBv2.dll</HintPath>
+ </Reference>
+ <Reference Include="AWSSDK.CognitoIdentity">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.CognitoIdentity.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.Json">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/PubNub/ThirdParty/JsonFx.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="BouncyCastle">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/PubNub/ThirdParty/BouncyCastle.dll</HintPath>
+ </Reference>
+ <Reference Include="MarkerMetro.Unity.WinLegacy">
+ <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/PubNub/ThirdParty/MarkerMetro.Unity.WinLegacy.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
  <HintPath>/home/justin/Unity/Battleship/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
@@ -302,27 +323,6 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>/home/justin/Unity/Battleship/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
- </Reference>
- <Reference Include="JsonFx.Json">
- <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/PubNub/ThirdParty/JsonFx.Json.dll</HintPath>
- </Reference>
- <Reference Include="MarkerMetro.Unity.WinLegacy">
- <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/PubNub/ThirdParty/MarkerMetro.Unity.WinLegacy.dll</HintPath>
- </Reference>
- <Reference Include="AWSSDK.CognitoIdentity">
- <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.CognitoIdentity.dll</HintPath>
- </Reference>
- <Reference Include="AWSSDK.DynamoDBv2">
- <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.DynamoDBv2.dll</HintPath>
- </Reference>
- <Reference Include="AWSSDK.Core">
- <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.Core.dll</HintPath>
- </Reference>
- <Reference Include="BouncyCastle">
- <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/PubNub/ThirdParty/BouncyCastle.dll</HintPath>
- </Reference>
- <Reference Include="AWSSDK.SecurityToken">
- <HintPath>/home/justin/Unity/Battleship/Assets/Games SDK for Alexa/Deps/AWSSDK/AWSSDK.SecurityToken.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/home/justin/Unity-2018.3.0f2/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

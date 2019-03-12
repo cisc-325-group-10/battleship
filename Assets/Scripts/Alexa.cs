@@ -58,15 +58,20 @@ public class Alexa : MonoBehaviour
         {
             if (result.IsError)
                 Debug.LogError(eventData.Exception.Message);
-
+            GameManager gm = FindObjectOfType<GameManager>();
             switch (message["type"] as string)
             {
                 case "AlexaUserId":
                     ConfirmSetup(result);
                     break;
-                case "DestroyRequest":
-                    Destroy(GameObject.Find("Battleship"));
-                    alexaManager.SendToAlexaSkill("BOOM!", null);
+                case "PlaceRequest":
+                    alexaManager.SendToAlexaSkill(gm.onMoveCommand(message["ship"] as string, message["col"] as string, message["row"] as string, message["orientation"] as string), null);
+                    break;
+                case "ConfirmPlacement":
+                    alexaManager.SendToAlexaSkill(gm.onConfirmPlacementCommand(), null);
+                    break;
+                case "FireRequest":
+                    alexaManager.SendToAlexaSkill(gm.onFireCommand(message["col"] as string, message["row"] as string), null);
                     break;
                 default:
                     alexaManager.SendToAlexaSkill("Unrecognized message type!", null);

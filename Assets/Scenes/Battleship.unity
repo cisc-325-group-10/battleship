@@ -1990,7 +1990,7 @@ MonoBehaviour:
     placed: 0
     hits: 0
     size: 3
-  - name: Covette
+  - name: Cutter
     model: {fileID: 1725230899}
     sunk: 0
     placed: 0
@@ -2021,7 +2021,7 @@ MonoBehaviour:
     placed: 0
     hits: 0
     size: 3
-  - name: Corvette
+  - name: Cutter
     model: {fileID: 0}
     sunk: 0
     placed: 0
@@ -2583,7 +2583,7 @@ PrefabInstance:
     - target: {fileID: 4204444043043488104, guid: 6625c41af93152d43b30b7e2802a0205,
         type: 3}
       propertyPath: m_Name
-      value: Corvette
+      value: Cutter
       objectReference: {fileID: 0}
     - target: {fileID: 4204444043043488110, guid: 6625c41af93152d43b30b7e2802a0205,
         type: 3}
